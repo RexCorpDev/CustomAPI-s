@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Custom API's</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>I am an API!</h2>
+        <hr>
+        <div class="well">
+          <div id="powerDiv"></div>
+          <hr>
+          <button id="getPower" class="btn btn-primary" type="button">POWERS</button>
+          <input type="number" id='base' placeholder="base">
+          <input type="number" id='exponent' placeholder="exponent">
+        </div>
+        <hr>
+        <div id='sentenceDiv' class="well">
+          <div id="wordcount"></div>
+          <div id="charcount"></div>
+          <div id="spacecount"></div>
+          <div id="avgwordlength"></div>
+          <hr>
+          <button id="sAnalyzer" class="btn btn-primary" type="button">Sentence Check</button>
+          <input type="text" id='sentence' placeholder="Write Sentence...">
+        </div>
+        <hr>
+        <div id='ageDiv' class="well">
+          <div id="ageDiv"></div>
+          <hr>
+          <button id="calculateAge" class="btn btn-primary" type="button">Age Calculator</button>
+          <input class="col-xs-1" type="number" id='year' placeholder="YYYY">
+          <input  class="col-xs-1" type="number" id='month' placeholder="MM">
+          <input  class="col-xs-1" type="number" id='day' placeholder="DD">
+        </div>
+        <!-- <hr>
+        <input type='email' id="gravatar-image" value="" required placeholder="email@address.com"><img src="" alt="" class="img-rounded center-block"></img> -->
+        <hr>
+        <!-- ANALYZER Plugin -->
+        <div class="row well">
+          <div class="col-xs-3">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button id="gravatarButton" class="btn btn-default btn-primary" type="button">Go!</button>
+              </span>
+              <input type="email" id='email' class="form-control" placeholder="Get gravatar image...">
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div>
+        <img src="" alt="" class="well img-rounded">
+
+      </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+
+</html>
